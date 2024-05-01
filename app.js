@@ -2,12 +2,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
 
     let quote = document.getElementById('quote')
-    let rng = (Math.random() * 19 + 1).toFixed(0)
+    // let rng = (Math.random() * 19 + 1).toFixed(0)
+    // quoting this out for now because I only made 1 quote work.
+    let rng = 2
     // I would've made this a switch but it didn't work.
     if (rng == 1) {
         quote.innerHTML = ("You rolled a Nat 1")
     }else if (rng == 2) {
-        quote.innerHTML = ("wow its 2")
+        quote.innerHTML = ("Shoot for the stars, so if you fall you land on a cloud.")
     }else if (rng == 3) {
         quote.innerHTML = ("wow its 3")
     }else if (rng == 4) {
