@@ -20,14 +20,27 @@ header {
   padding-right: 60px;
 }
 
+.pagewrapper {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 a {
   text-decoration: none;
 }
-
+.row {
+  margin: 1% 0%;
+  display: flex;
+}
 .hlinks>a {
   margin: 5%;
 }
 
+.half {
+max-width: 50%;
+font-size: 22px;
+padding-right: 5%;
+}
 
 .head {
   width: 30%;
