@@ -94,6 +94,11 @@ padding-right: 5%;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border:#C18AFF;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 /* Change color of dropdown links on hover */
@@ -116,6 +121,41 @@ padding-right: 5%;
 .column {
 display: flex;
 flex-flow: column nowrap;
+}
+
+.portimg {
+  width: 500px;
+  border:#C18AFF;
+  border-radius: 35px;
+  border-style: solid;
+  margin-right: 3%;
+}
+
+.desc {
+  margin-top: 2%;
+font-size: 18px;
+width: 80%;
+}
+
+.viscontainer {
+  margin-top: 5%;
+  margin-left: 25%;
+}
+.visit {
+  border-color: #C18AFF;
+  background-color: #000000;
+  border-radius: 20px;
+  font-size: 52px;
+  width: 150px;
+  height: 75px;
+  box-shadow: 0 9px #7D6EDB;
+}
+.visit:active {
+  box-shadow: 0 5px #6c60be;
+  transform: translateY(4px);
+}
+.visit:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
