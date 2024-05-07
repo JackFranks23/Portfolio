@@ -131,6 +131,16 @@ flex-flow: column nowrap;
   margin-right: 3%;
 }
 
+.alink {
+  font-style: italic;
+  color: #E16E7E;
+  text-decoration: underline;
+}
+#homebody {
+  margin-top: 3%;
+  font-size: 24px;
+  width: 55%;
+}
 .desc {
   margin-top: 2%;
 font-size: 18px;
