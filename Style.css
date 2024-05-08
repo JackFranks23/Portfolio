@@ -5,9 +5,11 @@
   margin: 0;
   color: #C18AFF;
 }
+
 body {
   background-color: #222222;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -25,21 +27,24 @@ header {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 a {
   text-decoration: none;
 }
+
 .row {
   margin: 1% 0%;
   display: flex;
 }
+
 .hlinks>a {
   margin: 5%;
 }
 
 .half {
-max-width: 50%;
-font-size: 22px;
-padding-right: 5%;
+  max-width: 50%;
+  font-size: 22px;
+  padding-right: 5%;
 }
 
 .head {
@@ -71,9 +76,11 @@ padding-right: 5%;
   font-size: 16px;
   border: none;
 }
+
 .dropbtn:hover {
   cursor: pointer;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -94,7 +101,7 @@ padding-right: 5%;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  border:#C18AFF;
+  border: #C18AFF;
   border-style: solid;
   border-bottom: none;
   border-left: none;
@@ -119,13 +126,33 @@ padding-right: 5%;
 }
 
 .column {
-display: flex;
-flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.hcolumn {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  font-size: 24px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3%;
+}
+
+.conimg {
+  width: 50px;
+  padding-right: 3%;
 }
 
 .portimg {
   width: 500px;
-  border:#C18AFF;
+  border: #C18AFF;
   border-radius: 35px;
   border-style: solid;
   margin-right: 3%;
@@ -136,21 +163,24 @@ flex-flow: column nowrap;
   color: #E16E7E;
   text-decoration: underline;
 }
+
 #homebody {
   margin-top: 3%;
   font-size: 24px;
   width: 55%;
 }
+
 .desc {
   margin-top: 2%;
-font-size: 18px;
-width: 80%;
+  font-size: 18px;
+  width: 80%;
 }
 
 .viscontainer {
   margin-top: 5%;
   margin-left: 25%;
 }
+
 .visit {
   color: #000000;
   border-color: #000000;
@@ -162,19 +192,38 @@ width: 80%;
   height: 75px;
   box-shadow: 0 9px #7D6EDB;
 }
+
 .visit:active {
   box-shadow: 0 5px #6c60be;
   transform: translateY(4px);
 }
+
 .visit:hover {
   cursor: pointer;
 }
-
+.email-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7D6EDB;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: "Trocchi", serif;
+  }
+  
+  
+  .email-button:hover {
+  
+  background-color: #6c60be;
+  
+  }
 @media only screen and (max-width: 600px) {
 
-  .hright > a,
+  .hright>a,
   #quote {
     display: none;
   }
-  
-  }
+
+}
