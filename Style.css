@@ -5,7 +5,10 @@
   margin: 0;
   color: #C18AFF;
 }
-
+.hidden {
+  opacity: 0;
+  transition: 3s;
+}
 body {
   background-color: #222222;
 }

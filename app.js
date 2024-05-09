@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
 
@@ -54,5 +56,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
         quote.innerHTML = ("L")
     }
 
+    let name = document.getElementById("name");
+    let nametxt = "I'm Jack Franks";
+    let name2 = document.getElementById("name2")
+    let name2txt = "but you probably already know that, given you're here."
 
-  });
+    function Typing(element, text, i = 0) {
+        if (i === 0) {
+            element.innerHTML = "";
+        }
+        element.textContent += text[i];
+
+        if (i === text.length - 1) {
+            return;
+        }
+
+        setTimeout(() => Typing(element, text, i + 1), 50);
+    }
+    setTimeout(() => {
+        Typing(name, nametxt);
+    }, 1500);
+    setTimeout(() => {
+        Typing(name2, name2txt);
+    }, 2800);
+    setTimeout(() => {
+        document.getElementById("homep").style.opacity=1
+        document.getElementById("himg").style.opacity=1
+    }, 7000);
+    
+
+});
