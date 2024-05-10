@@ -204,6 +204,9 @@ li {
 .visit:hover {
   cursor: pointer;
 }
+.contact {
+  margin-top: 10%;
+}
 .email-button {
   display: inline-block;
   padding: 10px 20px;
@@ -222,6 +225,18 @@ li {
   background-color: #6c60be;
   
   }
+.banner {
+  width: 100%;
+}
+.bannercontent {
+  color: #000000;
+  background: url(img/contactbanner.png);
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  font-size: 80px;
+  align-items: center;
+}
 @media only screen and (max-width: 600px) {
 
   .hright>a,
