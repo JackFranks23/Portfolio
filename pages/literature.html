@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Franks</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../Style.css">
+    <script>let home = 0;</script>
+    <script src="../app.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="head hleft">
+            <a href="../Home.html"><img style="height: 50px; margin-top: 7px;" src="../img/Sagittarius.png"></a>
+            <p>About</p>
+        </section>
+        <q id="quote">"Insert Quote Here"</q>
+        <section class="head">
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+            <div class="dropdown">
+                <button class="dropbtn"><img style="height: 16px;" src="../img/dropdownplaceholder.png"></button>
+                <div class="dropdown-content">
+                    <a href="../Home.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="certifications.html">Certifications</a>
+                    <a href="academic.html">Academic</a>
+                    <a href="hobbies.html">Hobbies</a>
+                    <a href="literature.html">Literature</a>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="pagewrapper">
+        <section class="row">
+            <section class="hcolumn">Here is the four most recent essays I've written. The Internment and Literary
+                Analysis essays were written in my sophomore year. The Jurassic Park and Ready Player One essays were
+                written my junior year. Press the button to view each essay.
+
+                <section class="buttons">
+                    <button onclick='essay("lit")' class="essay">
+                        Literary Analysis
+                    </button>
+                    <button onclick='essay("intern")' class="essay">
+                        Internment
+                    </button>
+                    <button onclick='essay("park")' class="essay">
+                        Jurassic Park
+                    </button>
+                    <button onclick='essay("oasis")' class="essay">
+                        Ready Player Onel
+                    </button>
+                </section>
+            </section>
+            <section class="hcolumn">
+                <object id="lit" class="none" data="../img/essays/Literary Analysis Synthesis Essay.pdf" width="800" height="800">
+                </object>
+                <object id="intern" class="none" data="../img/essays/Internment Essay.pdf" width="800" height="800">
+                </object>
+                <object id="park" class="none" data="../img/essays/Jurassic Park Essay.pdf" width="800" height="800">
+                </object>
+                <object id="oasis" class=""data="../img/essays/Ready Player One Essay.pdf" width="800" height="800">
+                </object>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

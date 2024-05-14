@@ -1,4 +1,18 @@
 
+    function essay(id) {
+        let lit = document.getElementById("lit");
+        let intern = document.getElementById("intern");
+        let park = document.getElementById("park");
+        let oasis = document.getElementById("oasis");
+        let essay = document.getElementById(id);
+        lit.classList.add("none")
+        intern.classList.add("none")
+        park.classList.add("none")
+        oasis.classList.add("none")
+        console.log(essay.id + " essay is displayed")
+        essay.classList.remove("none")
+    }
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded and parsed");
@@ -73,6 +87,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         setTimeout(() => Typing(element, text, i + 1), 50);
     }
+
+    
+    if (home === 1) {
+        console.log("Home Page")
     setTimeout(() => {
         Typing(name, nametxt);
     }, 1500);
@@ -83,6 +101,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.getElementById("homep").style.opacity=1
         document.getElementById("himg").style.opacity=1
     }, 7000);
-    
+} else {
+    console.log("Not Home Page")
+}
 
 });
