@@ -287,8 +287,21 @@ li {
 #name2 {
   font-size: 32px
 }
+.object {
+  width: 800px;
+  height: 800px;
+}
+.pimg {
+  width: 600px;
+}
+.mobile {
+  display: none;
+}
 @media only screen and (max-width: 480px) {
 
+  .mobile {
+    display: block;
+  }
   body,
   .pagewrapper{
     position: relative;
@@ -303,11 +316,16 @@ li {
   .row {
     flex-flow: column wrap;
   }
-
+  .half {
+    max-width: 100%;
+  }
   #homebody {
     width: 100%;
   }
 
+  .pimg {
+    width: 100%;
+  }
   .column,
   .hcolumn {
     flex-flow: column wrap;
@@ -315,6 +333,13 @@ li {
     width: 100vw;
     margin: 0%;
     padding: 0%;
+  }
+  p {
+    max-width: 100%;
+  }
+  .buttons {
+    height: 400px;
+    margin-left: 0%;
   }
   h2 {
     width: 75%;
@@ -398,6 +423,13 @@ ul>li {
   margin-left: 20%;
   margin-bottom: 5%;
   width: 100%;;
+}
+.desc {
+  width: 100%;
+}
+.object {
+  width: 250px;
+  height: 400px;
 }
 }
 
