@@ -299,6 +299,13 @@ li {
 .mobile {
   display: none;
 }
+#himg {
+  width: 400px;
+  margin-left: 20%;
+}
+.left {
+  padding-left: 2%;
+}
 @media only screen and (max-width: 480px) {
 
   .mobile {
@@ -372,7 +379,9 @@ li {
   position: relative;
   display: inline-block;
 }
-
+.left {
+  padding-left: 0%;
+}
 .dropdown-content {
   display: none;
   position: absolute;
